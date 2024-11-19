@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игра: Угадай число</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <h1>Игра: Угадай число</h1>
+        
+        <!-- Уровень сложности -->
+        <p>Выберите уровень сложности:</p>
+        <select id="difficulty">
+            <option value="10">Легкий (1-10)</option>
+            <option value="50">Средний (1-50)</option>
+            <option value="100">Сложный (1-100)</option>
+        </select>
+        
+        <!-- Кнопка начала игры -->
+        <button id="startButton">Начать игру</button>
+        
+        <!-- Сообщение для игрока -->
+        <div id="gameMessage"></div>
+
+        <!-- Поле для ввода числа -->
+        <input type="number" id="userInput" placeholder="Введите число" disabled>
+        <!-- Кнопка проверки -->
+        <button id="submitGuess" disabled>Проверить</button>
+    </div>
+
+    <!-- Подключение JS -->
+    <script src="script.js"></script>
+
+    <div class="form-container">
+        <h2>Форма заказа продукта или услуги</h2>
+        <form id="productOrderForm">
+            <!-- Поля формы -->
+            <label for="productName">Название продукта:</label>
+            <input type="text" id="productName" placeholder="Введите название продукта">
+    
+            <label for="quantity">Количество:</label>
+            <input type="number" id="quantity" placeholder="Введите количество">
+    
+            <label for="email">Ваш Email:</label>
+            <input type="email" id="email" placeholder="Введите email">
+    
+            <label for="date">Дата доставки:</label>
+            <input type="date" id="date">
+    
+            <button type="button" id="submitOrder">Отправить заказ</button>
+        </form>
+        <div id="orderResult"></div>
+    </div>
+    
+</body>
+</html>
+
+
